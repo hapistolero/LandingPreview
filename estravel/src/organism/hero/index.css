@@ -16,7 +16,7 @@
 }
 
 .changeBg{
-    background-image:url('./image/hero.jpg')
+    background-image:url('../image/hero.jpg')
 }
 
 @keyframes changeBg{
