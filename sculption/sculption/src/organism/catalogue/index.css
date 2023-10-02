@@ -1,0 +1,56 @@
+.text-shadow{
+    text-shadow: 1px 1px 7px black;
+}
+
+.serong{
+    animation:serong 2.2s linear infinite ;
+}
+
+@keyframes serong {
+    0%,100%{
+        transform:translate(-40px,30px);
+
+    }50%{
+        transform:translate(-30px,35px);
+
+
+    }
+}
+
+@media screen and (min-width:640px){
+    @keyframes serong {
+        0%,100%{
+            transform:translate(-30px,80px);
+    
+        }50%{
+            transform:translate(-20px,85px);
+    
+    
+        }
+    }
+}
+@media screen and (min-width:768px){
+    @keyframes serong {
+        0%,100%{
+            transform:translate(-30px,80px);
+    
+        }50%{
+            transform:translate(-20px,85px);
+    
+    
+        }
+    }
+}
+
+@media screen and (min-width:1024px){
+    @keyframes serong {
+        0%,100%{
+            transform:translate(-110px,270px);
+    
+        }50%{
+            transform:translate(-100px,275px);
+    
+    
+        }
+    }
+}

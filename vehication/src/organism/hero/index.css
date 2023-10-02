@@ -1,0 +1,80 @@
+
+
+  .orbit {
+    animation:orbit 2s linear;
+  }
+
+  @keyframes orbit {
+    0%{
+        transform:translate(-200px,-205px);
+    }100%{
+        
+        transform:translate(200px,205px);
+
+    }
+  }
+
+  .show {
+    animation:show 1s linear;
+  }
+  @keyframes show {
+    0%{
+        opacity:0;
+        trasition:all 1s ease-in-out;
+        transform:scale(0);
+    }100%{
+        
+        opacity:1;
+        overflow-y:hidden;
+        transform:scale(1);
+
+    }
+  }
+  .down {
+    animation:down 1s linear;
+  }
+  @keyframes down {
+    0%{
+        opacity:0;
+        trasition:all 1s ease-in-out;
+        transform:translateY(-20px);
+    }100%{
+        
+        opacity:1;
+        overflow-y:hidden;
+        transform:translateY(0);
+
+    }
+  }
+  .down1 {
+    animation:down1 1s linear;
+  }
+  @keyframes down1 {
+    0%{
+        opacity:0;
+        trasition:all 3s ease-in-out;
+        transform:translateY(-20px);
+    }100%{
+        
+        opacity:1;
+        overflow-y:hidden;
+        transform:translateY(0);
+
+    }
+  }
+  .down2 {
+    animation:down2 2s linear;
+  }
+  @keyframes down2 {
+    0%{
+        opacity:0;
+        trasition:all 1.5s ease-in-out;
+        transform:translateY(-20px);
+    }100%{
+        
+        opacity:1;
+        overflow-y:hidden;
+        transform:translateY(0);
+
+    }
+  }

@@ -1,0 +1,13 @@
+
+
+.leftToRight{
+    animation:leftToRight 1s infinite linear;
+}
+
+@keyframes leftToright{
+    from{
+        transform:translateX(100%);
+    }to{
+        transform:translateX(0%);
+    }
+}

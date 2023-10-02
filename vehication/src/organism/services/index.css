@@ -1,0 +1,14 @@
+
+.autoScroll div{
+    animation:autoScroll 7s infinite;
+    transition: transform 0s ease-in-out;
+}
+
+@keyframes autoScroll {
+    0%,{
+        transform:translateX(0%);
+    }100%{
+        transform:translateX(calc(-100% * 2));
+
+    }
+}

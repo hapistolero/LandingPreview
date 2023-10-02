@@ -1,0 +1,16 @@
+.click{
+    width:60%;
+    
+}
+.click1{
+    width:90%;
+    
+}
+
+.change{
+    background-color:black;
+}
+
+.show{
+    transform:translateX(0%);
+}

@@ -1,0 +1,37 @@
+
+.downToUp{
+    animation:downToUp 1s 1  linear;
+    transition:all 1s ease-in-out;
+
+}
+@keyframes downToUp{
+    from{
+        transform:translateY(100%);
+        opacity:0;
+    }to{
+        transform:translateY(0%);
+        opacity:1;
+
+    }
+}
+
+.changeBg{
+    animation:changeBg 30s infinite linear;
+    animation-delay:30s;
+    transition:all 5s ease-in-out;
+}
+
+@keyframes changeBg{
+    0%{
+    background-image:url('./image/hero.jpg')
+    }50%{
+
+ background-image:url('./image/hero1.jpg')
+    }75%{
+        background-image:url('./image/hero2.jpg')
+
+    }100%{
+        background-image:url('./image/hero.jpg')
+
+    }
+}

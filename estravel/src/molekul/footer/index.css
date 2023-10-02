@@ -1,0 +1,11 @@
+
+@media screen and (min-width:1024px){
+    .bgPos{
+        background-position:0% -400px;
+    }
+}
+
+.textShadow{
+text-shadow:3px 3px 2px black;
+    
+}

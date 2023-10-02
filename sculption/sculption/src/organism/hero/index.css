@@ -1,0 +1,195 @@
+.text-shadow{
+    text-shadow: 1px 1px 7px black;
+}
+
+.upDown{
+    animation:upDown 1.8s linear infinite;
+    transition: all 1s ease-in-out;
+}
+
+@keyframes upDown{
+    0%,100%{
+        transform:translate(90px, -100px);
+
+    }50%{
+        transform:translate(90px, -115px);
+
+    }
+}
+
+
+
+.bar1{
+    animation:bar1 4s linear infinite;
+    transition: all 1s ease-in-out;
+
+}
+
+@keyframes bar1{
+    0%,100%{
+        width:80px;
+
+    }50%{
+        width:50px
+
+    }
+}
+
+
+.bar2{
+    animation:bar2 4s linear infinite;
+    transition: all 1s ease-in-out;
+
+}
+
+@keyframes bar2{
+    0%,100%{
+        width:200px;
+
+    }50%{
+        width:100px
+
+    }
+}
+
+@media screen and (min-width:640px){
+    @keyframes upDown{
+        0%,100%{
+            transform:translate(210px, -100px);
+    
+        }50%{
+            transform:translate(210px, -115px);
+    
+        }
+    }
+
+    @keyframes bar1{
+        0%,100%{
+            width:150px;
+    
+        }50%{
+            width:80px;
+    
+        }
+    }
+
+    @keyframes bar2{
+        0%,100%{
+            width:300px;
+    
+        }50%{
+            width:200px
+    
+        }
+    }
+    
+}
+.bar3{
+    animation:bar3 4s linear infinite;
+    transition: all 1s ease-in-out;
+
+}
+
+@keyframes bar3{
+    0%,100%{
+        width:150px;
+
+    }50%{
+        width:100px
+
+    }
+}
+@media screen and (min-width:768px){
+    @keyframes upDown{
+        0%,100%{
+            transform:translate(230px, -100px);
+    
+        }50%{
+            transform:translate(230px, -115px);
+    
+        }
+    }
+
+    @keyframes bar1{
+        0%,100%{
+            width:150px;
+    
+        }50%{
+            width:80px;
+    
+        }
+    }
+
+    @keyframes bar2{
+        0%,100%{
+            width:300px;
+    
+        }50%{
+            width:200px
+    
+        }
+    }
+    
+}
+.bar3{
+    animation:bar3 4s linear infinite;
+    transition: all 1s ease-in-out;
+
+}
+
+@keyframes bar3{
+    0%,100%{
+        width:150px;
+
+    }50%{
+        width:100px
+
+    }
+}
+@media screen and (min-width:1024px){
+    @keyframes upDown{
+        0%,100%{
+            transform:translate(520px, -100px);
+    
+        }50%{
+            transform:translate(520px, -115px);
+    
+        }
+    }
+
+    @keyframes bar1{
+        0%,100%{
+            width:150px;
+    
+        }50%{
+            width:80px;
+    
+        }
+    }
+
+    @keyframes bar2{
+        0%,100%{
+            width:300px;
+    
+        }50%{
+            width:200px
+    
+        }
+    }
+    
+}
+.bar3{
+    animation:bar3 4s linear infinite;
+    transition: all 1s ease-in-out;
+
+}
+
+@keyframes bar3{
+    0%,100%{
+        width:150px;
+
+    }50%{
+        width:100px
+
+    }
+}
