@@ -1,12 +1,11 @@
 
-import { useEffect,useState } from "react";
+import { useEffect } from "react";
 import './index.css'
 export default function Index() {
     const handleScroll = ()=>{
-        const trigger = 1000
-        const element = document.querySelector('.imb')
-        const element2 = document.querySelector('.pb')
-        const booking = document.querySelector('.booking')
+        const element = document.querySelector('.imb') as unknown as HTMLElement
+        const element2 = document.querySelector('.pb') as unknown as HTMLElement
+        const booking = document.querySelector('.booking') as unknown as HTMLElement
             if (window.scrollY >= booking.offsetTop -100) {
                 
                 element.style.transform='scale(100%)'
@@ -19,8 +18,8 @@ export default function Index() {
                 element2.style.transform='translateX(200%)'
 
             }
-            const element3 = document.querySelectorAll('.lix')
-            const ulBook = document.querySelector('.ulBook')
+            const element3 = Array.from(document.getElementsByClassName('.lix') as HTMLCollectionOf<HTMLElement>)
+            const ulBook = document.querySelector('.ulBook') as unknown as HTMLElement
             if(window.scrollY > ulBook.offsetTop-300){
                 
                 element3.forEach((e,index)=>{

@@ -1,9 +1,9 @@
 import DestinationCard from '../../atom/destinationCard'
-import { useEffect,useState } from 'react'
+import {useState } from 'react'
 export default function Index(){
   const [index, setIndex] = useState(1);
   const prev =()=>{
-    const card = document.querySelectorAll('.dc')
+    const card = Array.from(document.getElementsByClassName('dc') as HTMLCollectionOf<HTMLElement>)
     
     if(index > 0){
 
@@ -22,7 +22,7 @@ export default function Index(){
   }
 
   const next =()=>{
-    const card = document.querySelectorAll('.dc')
+    const card = Array.from(document.getElementsByClassName('dc') as HTMLCollectionOf<HTMLElement>)
     
     if(index < card.length-1){
       setIndex(index+1)

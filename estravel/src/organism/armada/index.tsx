@@ -1,7 +1,7 @@
 import { useState,useEffect } from "react"
 
 export default function Index(){
-    const [armada,setArmada] = useState([
+    const [armada] = useState([
         {
             name:'Vacation Bus',
             description:`Tampilan modern, kenyamanan maksimal. Armada bus agen travel ini dilengkapi dengan fasilitas terkini untuk perjalanan yang menyenangkan dan aman. Temukan kenyamanan dalam perjalanan menuju destinasi impian Anda`,
@@ -62,10 +62,10 @@ export default function Index(){
     },[])
 
     const handleScroll = ()=>{
-        const armadaSect = document.querySelector('.armada')
-        const element = document.querySelector('.imc')
-        const element2 = document.querySelectorAll('.divix')
-        const element3 = document.querySelectorAll('.btnArmada')
+        const armadaSect = document.querySelector('.armada') as unknown as HTMLElement
+        const element = document.querySelector('.imc') as unknown as HTMLElement
+        const element2 = Array.from(document.getElementsByClassName('divix') as HTMLCollectionOf<HTMLElement> )
+        const element3 = Array.from(document.getElementsByClassName('btnArmada') as HTMLCollectionOf<HTMLElement>)
             if (window.scrollY > armadaSect.offsetTop -300) {
                 console.log('jancok')
                 element.style.transform='translateY(0%)'

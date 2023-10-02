@@ -1,7 +1,7 @@
 import { useRef,useEffect } from "react"
 import './index.css'
 export default function Index(){
-    const footRef = useRef(null)
+    const footRef = useRef<any>(null)
 
     useEffect(()=>{
         if(footRef.current){

@@ -4,7 +4,7 @@ import {useEffect, useState} from 'react'
 export default function index(){
     const [prog,setProg] = useState(33.3)
     const [index,setIndex] = useState(0)
-    const [testi,setTesti] = useState([
+    const [testi] = useState([
         {
             name:'Reno',
             desc:'"Tak ada yang bisa saya katakan selain luar biasa! Pelayanan agen travel ini sungguh memukau. Armada bus modern dan destinasi menarik membuat perjalanan saya tak terlupakan. Saya pasti merekomendasikannya!'
@@ -30,7 +30,7 @@ export default function index(){
     }
 
     const handleScroll =()=>{
-        const el = document.querySelector('.testi')
+        const el = document.querySelector('.testi') as unknown as HTMLElement
         if(window.scrollY >= el.offsetTop-300){
             el.style.transform = 'translateX(0%)'
         

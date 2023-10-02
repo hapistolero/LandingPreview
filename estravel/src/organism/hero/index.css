@@ -16,9 +16,7 @@
 }
 
 .changeBg{
-    animation:changeBg 30s infinite linear;
-    animation-delay:30s;
-    transition:all 5s ease-in-out;
+    background-image:url('./image/hero.jpg')
 }
 
 @keyframes changeBg{

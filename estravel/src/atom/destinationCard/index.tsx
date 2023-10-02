@@ -8,7 +8,7 @@ interface destCardProps{
 }
 export default function Index(props:destCardProps){
     const{destination,description,roundUrl,url} = props
-    const divRef = useRef(null)
+    const divRef = useRef<any>(null)
 
     useEffect(()=>{
         if(divRef.current){

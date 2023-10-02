@@ -3,8 +3,8 @@ import { useEffect } from "react"
 export default function Index(){
 
     const handleScroll = ()=>{
-        const el =  document.querySelectorAll('.plan')
-        const planSect = document.querySelector('.planSect')
+        const el =  Array.from(document.getElementsByClassName('plan') as HTMLCollectionOf<HTMLElement>)
+        const planSect = document.querySelector('.planSect') as unknown as HTMLElement
      if(window.scrollY >= planSect.offsetTop -200){
             el.forEach((e, i) => {
                 setTimeout(()=>{

@@ -7,7 +7,7 @@ export default function Index(){
 
     const handleScroll = ()=>{
         const trigger = 300
-        const element = document.querySelector('header')
+        const element = document.querySelector('header')!
         if (element && window.scrollY >= trigger) {
             element.style.backgroundColor = '#111';
           }else{

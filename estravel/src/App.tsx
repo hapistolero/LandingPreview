@@ -1,6 +1,3 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import Template from '../src/template'
 import Hero from '../src/organism/hero'
 import Destination from '../src/organism/destination'
