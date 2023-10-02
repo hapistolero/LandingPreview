@@ -2,10 +2,10 @@ import { useEffect } from "react"
 
 export default function index() {
     const handleScroll = ()=>{
-        const el = document.querySelector('.bout')
-        const circ = document.querySelector('.circ')
-        const lix = document.querySelectorAll('.lix')
-        const sect = document.querySelector('#about')
+        const el = document.querySelector('.bout') as unknown as HTMLElement
+        const circ = document.querySelector('.circ') as unknown as HTMLElement
+        const lix = Array.from(document.getElementsByClassName('lix') as HTMLCollectionOf<HTMLElement>)
+        const sect = document.querySelector('#about') as unknown as HTMLElement
       if(window.scrollY > sect.offsetTop-100 ){
        
             el.style.transform='scale(1)'

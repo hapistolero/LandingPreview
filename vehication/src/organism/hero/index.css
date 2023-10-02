@@ -20,7 +20,7 @@
   @keyframes show {
     0%{
         opacity:0;
-        trasition:all 1s ease-in-out;
+        transition:all 1s ease-in-out;
         transform:scale(0);
     }100%{
         
@@ -36,7 +36,7 @@
   @keyframes down {
     0%{
         opacity:0;
-        trasition:all 1s ease-in-out;
+        transition:all 1s ease-in-out;
         transform:translateY(-20px);
     }100%{
         
@@ -52,7 +52,7 @@
   @keyframes down1 {
     0%{
         opacity:0;
-        trasition:all 3s ease-in-out;
+        transition:all 3s ease-in-out;
         transform:translateY(-20px);
     }100%{
         
@@ -68,7 +68,7 @@
   @keyframes down2 {
     0%{
         opacity:0;
-        trasition:all 1.5s ease-in-out;
+        transition:all 1.5s ease-in-out;
         transform:translateY(-20px);
     }100%{
         

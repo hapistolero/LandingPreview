@@ -1,7 +1,7 @@
 import {useState,useRef,useEffect} from 'react'
 
 export default function index() {
-    const headRef = useRef(null)
+    const headRef = useRef<any>(null)
     const handleScroll = () =>{
         
         if(window.scrollY > 100){

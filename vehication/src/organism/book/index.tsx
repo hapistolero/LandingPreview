@@ -4,8 +4,8 @@ import {useEffect} from 'react'
 export default function index() {
   
     const handleScroll = ()=>{
-        const el = document.querySelector('.text')
-        const sect = document.querySelector('#book')
+        const el = document.querySelector('.text')  as unknown as HTMLElement
+        const sect = document.querySelector('#book')as unknown as HTMLElement
       if(window.scrollY > sect.offsetTop-200 ){
        
             el.style.transform='translateX(0%)'

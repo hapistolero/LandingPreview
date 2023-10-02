@@ -4,7 +4,7 @@ import './index.css'
 import {useState,useEffect} from 'react'
 export default function index() {
     const [index, setIndex] = useState(0); // Start with index 0
-    const [title,setTitle] = useState([
+    const [title] = useState([
         'sewa motor',
         'sewa mobil',
         'sewa sopir'
@@ -12,8 +12,8 @@ export default function index() {
 
 
   const handleScroll = ()=>{
-      const el = document.querySelectorAll('.sc')
-      const sect = document.querySelector('#services')
+      const el = Array.from(document.getElementsByClassName('sc') as HTMLCollectionOf<HTMLElement>)
+      const sect = document.querySelector('#services') as unknown as HTMLElement
     if(window.screen.width >=768 && window.scrollY > sect.offsetTop-200 ){
       
       el.forEach((e, i) => {
@@ -58,7 +58,7 @@ export default function index() {
 
    
   const prev = () => {
-    const el = document.querySelectorAll('.sc');
+    const el =Array.from(document.getElementsByClassName('sc') as HTMLCollectionOf<HTMLElement>);
     if (index > 0) {
       const newIndex = index - 1;
       el.forEach((e) => {
@@ -69,7 +69,7 @@ export default function index() {
   };
 
   const next = () => {
-    const el = document.querySelectorAll('.sc');
+    const el = Array.from(document.getElementsByClassName('sc') as HTMLCollectionOf<HTMLElement>);
     if (index < el.length - 1) {
       const newIndex = index + 1;
       el.forEach((e) => {
@@ -79,7 +79,7 @@ export default function index() {
     }
   };
 
-  const handleHover =(index)=>{
+  const handleHover =(index:any)=>{
     setIndex(index)
   }
     
