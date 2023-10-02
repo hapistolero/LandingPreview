@@ -74,7 +74,7 @@ export default function index() {
         </p>
         <div className="lg:flex lg:mt-10">
         
-        <img className="bout w-[250px] sm:w-[350px] md:w-[400px] lg:mt-0 lg:w-[40%] sm:mt-10 mx-auto" src='./image/about.svg' />
+        <img className="bout w-[250px] sm:w-[350px] md:w-[400px] lg:mt-0 lg:w-[40%] sm:mt-10 mx-auto" src='/image/about.svg' />
         <div className="circ  w-[100px] h-[100px] sm:w-[120px] sm:h-[120px]  bg-[#04d7a2] rounded-full relative translate-y-[-70px] sm:translate-x-[350px] md:translate-x-[450px] sm:translate-y-[-100px] translate-x-[190px] lg:translate-x-[-120px] lg:translate-y-[210px] z-[-1]  "></div>
         
         <div className=" lg:w-[60%] lg:text-[0.9em]">
