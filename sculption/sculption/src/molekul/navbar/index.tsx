@@ -14,9 +14,9 @@ export default function Index(){
     const newBackgroundColor = yOffset > 5 ? 'black' : '';
     const opa = yOffset > 5 ? '1' : '';
 
-    document.querySelector('header').style.backgroundColor = newBackgroundColor;
-    document.querySelector('header').style.opacity = opa;
-    document.querySelector('nav').style.opacity = '1';
+    document.querySelector('header')!.style.backgroundColor = newBackgroundColor;
+    document.querySelector('header')!.style.opacity = opa;
+    document.querySelector('nav')!.style.opacity = '1';
 
     setScrollPosition({ x: window.scrollX, y: yOffset });
   };

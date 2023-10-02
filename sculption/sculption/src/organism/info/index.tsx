@@ -7,15 +7,17 @@ export default function Index(){
     if(index > 0){
 
       index-=1
-    const card = document.querySelectorAll('.cardInfo')
+    const card = Array.from(document.getElementsByClassName('.cardInfo') as HTMLCollectionOf<HTMLElement>)
     card.forEach(e => {
-      e.style.transform= `translateX(-${index * 100}%)`
-
+      if(e.style){
+        e.style.transform= `translateX(-${index * 100}%)`
+      }
     });
   }
   }
   const next =()=>{
-    const card = document.querySelectorAll('.cardInfo')
+    const card =  Array.from(document.getElementsByClassName('.cardInfo') as HTMLCollectionOf<HTMLElement>)
+
     if(index < card.length-1){
       index++
     card.forEach(e => {
